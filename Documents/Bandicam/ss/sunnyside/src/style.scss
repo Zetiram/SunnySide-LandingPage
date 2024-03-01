@@ -1,0 +1,89 @@
+@use './modules/Header';
+@use './modules/main';
+@use './modules/footer';
+
+$Very-dark-grayish-blue: hsl(213, 9%, 39%);
+$Soft-red: hsl(7, 99%, 70%);
+$Dark-moderate-cyan/*(footer)*/: hsl(168, 34%, 41%);
+$Grayish-blue: hsl(210, 4%, 67%);
+$Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,900;1,700&display=swap');
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+html, body {
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: $Dark-moderate-cyan;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer
+}
+
+.WeAre--title {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+}
+
+.AboutUs-Container__title {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+
+}
+
+p {
+  font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: $Very-dark-grayish-blue;
+}
+
+h2, h4 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+
+.Testimonial-Section--title {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: $Grayish-blue;
+  letter-spacing: 3px;
+}
+
+h5 {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: underline $Soft-red 5px;
+  color: $Very-dark-desaturated-blue;
+
+}
+
+
+small {
+  color: gray;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+}

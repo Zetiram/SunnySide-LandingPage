@@ -1,0 +1,65 @@
+$Soft-red: hsl(7, 99%, 70%);
+$Yellow: hsl(51, 100%, 49%);
+$Dark-desaturated-cyan/*(graphic design text)*/: hsl(167, 40%, 24%);
+$Dark-blue/*(photography text)*/: hsl(198, 62%, 26%);
+$Dark-moderate-cyan/*(footer)*/: hsl(168, 34%, 41%);
+$Cyan: #90d4c5;
+
+
+$Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$Very-dark-grayish-blue: hsl(213, 9%, 39%);
+$Dark-grayish-blue: hsl(232, 10%, 55%);
+$Grayish-blue: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
+
+Footer {
+  padding-top: 13%;
+  background-color: $Cyan;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.Footer-Logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.Footer-AboutUs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+}
+
+.Social-Media-Container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+
+
+@media(min-width: 1024px) {
+  footer {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    .Footer-AboutUs {
+          display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+    width: 40%;
+    }
+    .Social-Media-Container {
+          display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 45px;
+    width: 30%;
+    }
+  }
+}
+

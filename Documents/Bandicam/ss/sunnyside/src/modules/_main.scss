@@ -1,0 +1,528 @@
+$Soft-red: hsl(7, 99%, 70%);
+$Yellow: hsl(51, 100%, 49%);
+$Dark-desaturated-cyan: hsl(167, 40%, 24%);
+$Dark-blue: hsl(198, 62%, 26%);
+$Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$Dark-moderate-cyan: hsl(168, 34%, 41%);
+
+$Very-dark-grayish-blue: hsl(213, 9%, 39%);
+$Dark-grayish-blue: hsl(232, 10%, 55%);
+$Grayish-blue: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
+
+.WeAre-Container {
+  .WeAre-Container__title-container {
+    margin-top: 3%;
+    letter-spacing: 5px;
+  }
+  .WeAre-Container__img-container {
+    margin-top: 10%;
+  }
+
+  .WeAre-Container__title-container--img .WeAre--img {
+    height: 85%;
+  }
+
+}
+
+
+.Image-Container--img {
+  width: 100%;
+}
+
+.AboutUs-Container {
+    padding: 15% 5%;
+    padding-bottom: 10%;
+    margin-bottom: 10%;
+}
+
+.AboutUs-Container  {
+
+   .AboutUs-Container__title {
+      margin-bottom: 10%;
+      color: $Very-dark-desaturated-blue;
+   }
+
+   .AboutUs-Container__description {
+    margin-bottom: 10%;
+   }
+
+}
+
+// Services
+
+.cherries {
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 32rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.orange {
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 32rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 15%;
+}
+
+.cherries {
+  background-image: url('./images/mobile/image-graphic-design.jpg');
+
+}
+
+.orange {
+  background-image: url('./images/mobile/image-photography.jpg');
+}
+
+.cherries {
+  h2 {
+      color: $Dark-desaturated-cyan;
+  }
+
+  p {
+    color: $Dark-desaturated-cyan;
+  }
+
+  .ServiceText {
+    top: 19.5rem;
+  }
+}
+
+.orange {
+  h2 {
+    color: $Dark-blue;
+  }
+
+  p {
+    color: $Dark-blue;
+  }
+  .ServiceText {
+    top: 20rem;
+  }
+}
+
+.ServiceText {
+  position: relative;
+}
+
+
+.ServiceText {
+  p {
+    margin-top: 5%;
+  }
+}
+
+// Testimonialsss
+
+.Testimonial-Section {
+  margin-top: 10%;
+}
+
+
+.Testimonial-Container {
+  padding: 0 5%;
+  margin-top: 12%;
+  margin-bottom: 15%;
+} 
+
+.Testimonial-Container__img-Container {
+  margin-bottom: 7%;
+}
+
+.Testimonial-Container__img-Container {
+
+  .Testimonial-Container__img-Container--img {
+  height: 50px;
+  border-radius: 30px;
+} 
+
+}
+
+.Testimonial-Container__Review-Container {
+  margin-bottom: 7%;
+}
+
+
+.Testimonial-Container__Name-Container--name {
+  margin-bottom: 3%;
+  color: $Very-dark-desaturated-blue;
+}
+
+.Testimonial-Container__Name-Container--text {
+  width: 1;
+}
+
+// Thumbnails
+
+.Thumbnails-Section__ContainerPC {
+  display: none;
+}
+
+.Thumbnails-Container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.Thumbnails-Container {
+    img {
+      width: 100%;
+    }
+}
+
+@media(min-width: 360px) {
+  .Services-Container {
+    .cherries, .orange {
+    height: 36rem;
+  }
+
+  .cherries, .orange {
+    h2 { 
+      font-size: xx-large;
+    }
+  }
+
+  .cherries, .orange {
+    .ServiceText {
+      top: 22rem;
+    }
+  }
+
+  .orange {
+    .ServiceText {
+      top: 23rem;
+    }
+  }
+  }
+}
+
+@media(min-width: 375px) {
+
+.WeAre-Container__title-container {
+  margin-top: -10%;
+}
+
+.WeAre-Container__title-container {
+  h1 {
+    font-size: 38px;
+  }
+}
+
+  .cherries, .orange {
+    height: 42.5rem;
+  }
+
+  .cherries, .orange {
+     h2 {
+      font-size: xx-large;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .Services-Container .cherries .ServiceText {
+    top: 23rem;
+  }
+
+  .Services-Container .orange .ServiceText {
+    top: 24rem;
+  }
+
+  .Testimonial-Container__img-Container {
+    .Testimonial-Container__img-Container--img {
+      height: 80px;
+      border-radius: 40px;
+    }
+  }
+
+  .Testimonial-Container__Review-Container {
+    .Testimonial-Container__Review-Container--text {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .Testimonial-Container__Name-Container {
+    .Testimonial-Container__Name-Container--name {
+      font-size: x-large;
+
+    }
+
+    .Testimonial-Container__Name-Container--role {
+      font-size: 18px;
+    }
+  }
+
+
+}
+
+@media(min-width: 425px) {
+  .WeAre-Container__title-container {
+    h1 {
+      font-size: xxx-large;
+    }
+  }
+
+  .AboutUs-Container {
+    h2{
+      font-size: 30px;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+.cherries, .orange {
+    .ServiceText {
+    h2 {
+      font-size: 36px;
+  }
+  p {
+    font-size: 22px;
+  }
+}
+}
+
+.Services-Container .cherries, .Services-Container .orange {
+    height: 42rem;
+  }
+
+  .Services-Container .cherries .ServiceText {
+    top: 26rem;
+  }
+
+  .Services-Container .orange .ServiceText {
+    top: 27rem;
+  }
+}
+
+@media(min-width: 768px) {
+
+  .Nav-Container {
+    padding-top: 3%;
+  }
+
+ main {
+   .Transform-Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Transform-Container {
+    .Image-Container {
+      order: 1;
+    }
+
+    .eggPC {
+      display: inherit;
+    }
+  }
+
+  .AboutUs-Container {
+    padding: 1rem 1.5rem;
+    margin-bottom: 0%;
+  }
+
+  .AboutUs-Contaier {
+    h2 {
+      font-size: x-large;
+    }
+  }
+
+  .StandOut-Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cupPC {
+    display: inherit;
+  }
+
+  .Services-Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cherries {
+    background-image: url('./images/desktop/image-graphic-design.jpg');
+    height: 20rem;
+  }
+
+  .orange {
+    background-image: url('./images/desktop/image-photography.jpg');
+    height: 20rem;
+  }
+
+  .Services-Container .cherries .ServiceText, .Services-Container .orange .ServiceText {
+    top: 11rem;
+  }
+
+  .cherries .ServiceText, .orange .ServiceText {
+    h2 {
+      font-size: x-large;
+    }
+
+    p {
+      font-size: 17px;
+    }
+    
+  }
+
+  .Testimonial-Section {
+    margin-top: 5%;
+    margin-bottom: 8%;
+  }
+
+  .Testimonial-Section {
+    .Testimonial-Section__Container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.Thumbnails-Container {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+}}
+
+@media(min-width: 1024px) {
+  .Nav-Container {
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .Nav-Container--items {
+    .Menu-Content__Contact {
+      width: 20%;
+    }
+  }
+
+  .WeAre-Container {
+    height: 65vh;
+  }
+
+  .WeAre-Container {
+    .WeAre--title {
+      margin-top: -30%;
+    }
+
+    .WeAre--img {
+      margin-top: -4%;
+    }
+  }
+
+  main .AboutUs-Container {
+    padding: 13%;
+  }
+
+  .AboutUs-Container {
+    h2, p, h5 {
+      text-align: left;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+
+  main .Services-Container {
+    .cherries, .orange {
+      .ServiceText {
+        top: 16rem;
+      }
+      .ServiceText {
+        p {
+          margin-top: 3%;
+          font-size: 20px;
+        }
+      }
+      }
+
+      .cherries .ServiceText h2, .orange .ServiceText h2{
+        font-size: 40px;
+      }
+
+      .cherries, .orange {
+        height: 55vh;
+      }
+
+      .orange {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    Footer {
+      padding-top: 5%;
+    }
+  }
+
+
+@media(min-width: 1440px) {
+   .Nav-Container--items {
+    justify-content: space-evenly;
+    margin-right: -5%;
+  }
+
+  .Nav-Container--items {
+    .Menu-Content__Contact {
+      width: 15%;
+    }
+  }
+
+  .WeAre-Container {
+    height: 70vh
+  }
+
+  .WeAreContainer {
+    .WeAre--title {
+      margin-top: -45%;
+    }
+
+    .WeAre-Container__img-container {
+      padding-bottom: 9%;
+    }
+      
+    }
+
+
+  .AboutUs-Container {
+    h2 {
+      font-size: xxx-large;
+    }
+
+    h2, h5 {
+      color: $Very-dark-desaturated-blue;
+    }
+    
+  }
+
+  .Services-Container {
+    .cherries, .orange {
+      .ServiceText {
+        top: 65%;
+      }
+
+      .ServiceText {
+        font-size: 36px;
+      }
+
+      
+    }
+
+  .Transform-Container {
+    h5 {
+      text-decoration: underline $Yellow 5px;
+    }
+  }}
+
+  .Services-Container .cherries, .Services-Container .orange {
+    height: 75vh;
+  }
+
+}
